@@ -1,0 +1,1 @@
+import requestsfrom bs4 import BeautifulSoupurl='http://hu.58.com/xinchengqu/chuzu/pn69/'response=requests.get(url)soup = BeautifulSoup(response.content,'lxml')a = soup.select('#bottom_ad_li > div.pager > a.next')print len(a)
