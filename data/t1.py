@@ -1,1 +1,1 @@
-# -*- coding:utf-8 -*-import requestsimport timetime.sleep(1)print type(True)
+# -*- coding:utf-8 -*-import requestsimport timefor i in range(10):    print i    time.sleep(2)
