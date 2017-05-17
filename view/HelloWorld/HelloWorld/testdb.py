@@ -1,0 +1,1 @@
+# -*- coding:utf-8 -*-from django.http import HttpResponsefrom wap.models import Testdef testdb(request):    test1 = Test.objects.get(id=1)    test1.name = "Google"    test1 .save()    return HttpResponse('<p>添加数据成功</p>')
