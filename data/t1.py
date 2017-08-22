@@ -1,1 +1,1 @@
-# -*- coding:utf-8 -*-import requestsimport timefor i in range(10):    print i    time.sleep(2)
+# -*- coding:utf-8 -*-import requestsurl = "http://wx.talascloud.com/wx/vote/voteAction.do"data = {"id": 9,}ip="222.94.148.66:808"proxies = { "http": "http://%s"%(ip)}response = requests.post(url, data=data)print response.content

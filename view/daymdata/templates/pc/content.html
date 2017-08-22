@@ -1,0 +1,22 @@
+{% extends "pc/base.html" %}
+{% load staticfiles %}
+{% block mainbody %}
+{% autoescape off %}
+    {% if article %}
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column content">
+                    <h1 class="text-center ">{{ article.title }}</h1>
+                    <small>时间：{{ article.time|date:"Y-m-d h:m:i"  }}</small>
+                    <div class="text-center">
+                        {{ article.content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <h1 style="margin-top: 100px">{{ reason }} </h1>
+    {% endif %}
+{% endautoescape %}
+
+{% endblock %}

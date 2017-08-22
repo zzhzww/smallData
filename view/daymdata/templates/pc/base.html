@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="day-m-data">
+    <meta name="keywords" content="day-m-data">
+    <meta http-equiv="mobile-agent" content="format=html5; url=http://localhost/">
+    <meta name="apple-mobile-web-app-title" content="day-m-data">
+    <title>{{ SITE_NAME }}</title>
+    <link rel="stylesheet" media="all" href=" {% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" media="all" href=" {% static 'css/base.css' %}">
+    <link href="http://cdn2.jianshu.io/assets/favicons/favicon-783beb88ed621ceab614de960376ac0c.ico" rel="icon">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://cdn2.jianshu.io/assets/apple-touch-icons/57-47624b2e2161e8eb144462c85db0a5ff.png" sizes="57x57">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://cdn2.jianshu.io/assets/apple-touch-icons/72-c00cde7cf98fc49e50cbb3ee1dcd5804.png" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://cdn2.jianshu.io/assets/apple-touch-icons/76-e8af0bdeaf1ba31e303b1fde8b5e66c4.png" sizes="76x76">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://cdn2.jianshu.io/assets/apple-touch-icons/114-f4c78569bbf1977e8382a5fd90c9237a.png"
+          sizes="114x114">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://cdn2.jianshu.io/assets/apple-touch-icons/120-cf10c3711dba269522743729efe66bbc.png"
+          sizes="120x120">
+    <link rel="apple-touch-icon-precomposed"
+          href="http://cdn2.jianshu.io/assets/apple-touch-icons/152-7bd60457b5f3ecbf1343f0e6241be4f8.png"
+          sizes="152x152">
+</head>
+<body lang="zh-CN" class="reader-black-font">
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"><span
+                            class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href={{ index }}>{{ SITE_NAME }}</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="{% url 'index' %}">{{ name }}</a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong
+                                    class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+
+                                <li class="divider">
+                                </li>
+
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+
+                                <li class="divider">
+                                </li>
+
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control"/>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+
+            </nav>
+            {% block mainbody %}
+
+            {% endblock %}
+
+        </div>
+    </div>
+</div>
+<nav class="container navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="row">
+        <div class="col-xs-12 main">
+
+            <a target="_blank" href="http://www.jianshu.com/c/jppzD2">关于我们</a><em> · </em>
+            <a target="_blank" href="http://www.jianshu.com/contact">联系我们</a><em>· </em>
+{#            <a target="_blank" href="http://www.jianshu.com/c/bfeec2e13990">加入我们</a><em> · </em>#}
+            <a target="_blank" href="http://www.jianshu.com/faqs">帮助中心</a><em>· </em>
+            <a target="_blank" href="http://www.jianshu.com/p/cabc8fa39830">合作伙伴</a>
+            <div class="icp">
+                ©2012-2017 内蒙古科惠众新网络科技有限公司   Tel:18204915000
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script src=" {% static 'js/jquery.min.js' %}"></script>
+<script src=" {% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
