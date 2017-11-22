@@ -8,7 +8,7 @@ from django.db import models
 
 
 
-class Category(models.Model):
+class category(models.Model):
     name = models.CharField(max_length=30, verbose_name='分类名称')
     index = models.IntegerField(default=100, verbose_name='分类排序')
 
@@ -23,14 +23,20 @@ class Category(models.Model):
 
 class article(models.Model):
     title = models.CharField(max_length=30, verbose_name='标题')
+    img = models.CharField(max_length=30, verbose_name='图片')
     content = models.TextField(verbose_name='文章内容')
     time = models.DateTimeField(auto_now_add=True,verbose_name='发布时间')
-    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类')
+    category = models.ForeignKey(category,blank=True, null=True, verbose_name='分类')
+    def catid(self):
+        return self.category.name
+    catid.short_description = '分类'
+
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
 
         def __unicode__(self):
             return str(self.title)
+
 
 

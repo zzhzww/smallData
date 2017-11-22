@@ -6857,3 +6857,2293 @@ TypeError: content() takes exactly 1 argument (2 given)
 2017-08-16 11:44:10,198 [Thread-3:123145491599360] [django.request:152] [base:get_response] [WARNING]- Not Found: /^
 2017-08-16 11:55:26,618 [Thread-2:123145490518016] [django.request:152] [base:get_response] [WARNING]- Not Found: /content13
 2017-08-16 11:55:27,368 [Thread-3:123145490518016] [django.request:152] [base:get_response] [WARNING]- Not Found: /content13
+2017-08-23 17:51:42,958 [Thread-19:123145490362368] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-23 21:27:42,263 [Thread-2:123145357168640] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 58, in _wrapped_view_func
+    add_never_cache_headers(response)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/cache.py", line 274, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/cache.py", line 265, in patch_response_headers
+    if not response.has_header('Expires'):
+AttributeError: 'NoneType' object has no attribute 'has_header'
+2017-08-23 22:32:01,969 [Thread-6:123145517637632] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1636, in changelist_view
+    FormSet = self.get_changelist_formset(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 700, in get_changelist_formset
+    fields=self.list_editable, **defaults
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 853, in modelformset_factory
+    error_messages=error_messages, field_classes=field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 262, in __new__
+    raise FieldError(message)
+FieldError: Unknown field(s) (category_id) specified for article
+2017-08-23 22:32:17,612 [Thread-8:123145517637632] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1636, in changelist_view
+    FormSet = self.get_changelist_formset(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 700, in get_changelist_formset
+    fields=self.list_editable, **defaults
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 853, in modelformset_factory
+    error_messages=error_messages, field_classes=field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 262, in __new__
+    raise FieldError(message)
+FieldError: Unknown field(s) (category_id) specified for article
+2017-08-23 22:35:10,061 [Thread-2:123145377595392] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1636, in changelist_view
+    FormSet = self.get_changelist_formset(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 700, in get_changelist_formset
+    fields=self.list_editable, **defaults
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 853, in modelformset_factory
+    error_messages=error_messages, field_classes=field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 262, in __new__
+    raise FieldError(message)
+FieldError: Unknown field(s) (category_id) specified for article
+2017-08-23 22:35:11,907 [Thread-3:123145377595392] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1636, in changelist_view
+    FormSet = self.get_changelist_formset(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 700, in get_changelist_formset
+    fields=self.list_editable, **defaults
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 853, in modelformset_factory
+    error_messages=error_messages, field_classes=field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 262, in __new__
+    raise FieldError(message)
+FieldError: Unknown field(s) (category_id) specified for article
+2017-08-23 22:44:44,691 [Thread-3:123145386377216] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/jsi18n/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 242, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 1105, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 863, in execute_sql
+    sql, params = self.as_sql()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 420, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 373, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/where.py", line 79, in as_sql
+    sql, params = compiler.compile(child)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 373, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/lookups.py", line 169, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/lookups.py", line 162, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 644, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 174, in data_types
+    if self.features.supports_microsecond_precision:
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/features.py", line 53, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4) and Database.version_info >= (1, 2, 5)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 385, in mysql_version
+    with self.temporary_connection() as cursor:
+  File "/Users/zzh/anaconda/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 591, in temporary_connection
+    cursor = self.cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '60.205.182.23' (60)")
+2017-08-23 23:04:04,239 [Thread-2:123145436278784] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Unknown field(s) (index, name) specified for article. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-23 23:04:06,325 [Thread-3:123145436278784] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Unknown field(s) (index, name) specified for article. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-23 23:04:30,054 [Thread-5:123145436278784] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Unknown field(s) (index, name) specified for article. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-23 23:12:13,786 [Thread-5:123145332137984] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 12, in mycategory
+    return obj.name
+AttributeError: 'article' object has no attribute 'name'
+2017-08-23 23:12:57,989 [Thread-2:123145556135936] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+TypeError: mycategory() takes exactly 1 argument (2 given)
+2017-08-23 23:29:10,872 [Thread-2:123145446154240] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+TypeError: Category() takes exactly 1 argument (2 given)
+2017-08-23 23:29:13,098 [Thread-3:123145446154240] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+TypeError: Category() takes exactly 1 argument (2 given)
+2017-08-23 23:40:24,313 [Thread-2:123145530843136] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+TypeError: catid() takes exactly 1 argument (2 given)
+2017-08-24 00:03:56,689 [Thread-4:123145358536704] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Cannot resolve keyword 'owner' into field. Choices are: article, id, index, name. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-24 00:11:26,287 [Thread-5:123145358536704] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Cannot resolve keyword 'owner' into field. Choices are: article, id, index, name. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-24 00:12:34,025 [Thread-2:123145345859584] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    kwargs["queryset"] = category.objects.filter(id=request.user)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1261, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1221, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1115, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'SimpleLazyObject'
+2017-08-24 00:12:36,412 [Thread-3:123145345859584] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    kwargs["queryset"] = category.objects.filter(id=request.user)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1261, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1221, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1115, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 966, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'SimpleLazyObject'
+2017-08-24 00:14:17,923 [Thread-2:123145379385344] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 1105, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 874, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '60.205.182.23' (60)")
+2017-08-24 00:17:45,983 [Thread-2:123145484496896] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'str' object has no attribute 'complex_filter'
+2017-08-24 00:19:15,977 [Thread-2:123145464401920] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 12, in formfield_for_foreignkey
+    kwargs["queryset"] = category.objects.filter(id=request.category_id)
+AttributeError: 'WSGIRequest' object has no attribute 'category_id'
+2017-08-24 00:21:10,478 [Thread-2:123145461764096] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'str' object has no attribute 'complex_filter'
+2017-08-24 00:22:29,542 [Thread-2:123145534660608] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    print category.objects.id
+AttributeError: 'Manager' object has no attribute 'id'
+2017-08-24 00:24:08,724 [Thread-2:123145530937344] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    print category.objects.all().id
+AttributeError: 'QuerySet' object has no attribute 'id'
+2017-08-24 00:25:02,992 [Thread-2:123145572786176] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    print category.objects.filter(id)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1261, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1162, in build_filter
+    arg, value = filter_expr
+TypeError: 'builtin_function_or_method' object is not iterable
+2017-08-24 00:30:05,977 [Thread-3:123145549271040] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    print category.objects.filter(id=request.id)
+AttributeError: 'WSGIRequest' object has no attribute 'id'
+2017-08-24 00:30:07,932 [Thread-2:123145545064448] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 1105, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 874, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '60.205.182.23' (60)")
+2017-08-24 00:30:19,730 [Thread-7:123145545064448] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 13, in formfield_for_foreignkey
+    print category.objects.filter(id=request.id)
+AttributeError: 'WSGIRequest' object has no attribute 'id'
+2017-08-24 00:32:42,486 [Thread-2:123145328521216] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'DeferredAttribute' object has no attribute 'complex_filter'
+2017-08-24 00:37:54,981 [Thread-2:123145411153920] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/1/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'DeferredAttribute' object has no attribute 'complex_filter'
+2017-08-24 00:42:54,078 [Thread-4:123145500483584] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 12, in formfield_for_foreignkey
+    print category.objects.filter(id=1).id
+AttributeError: 'QuerySet' object has no attribute 'id'
+2017-08-24 00:46:01,204 [Thread-2:123145436295168] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'DeferredAttribute' object has no attribute 'complex_filter'
+2017-08-24 00:47:28,851 [Thread-2:123145454206976] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'DeferredAttribute' object has no attribute 'complex_filter'
+2017-08-24 00:55:30,358 [Thread-2:123145487069184] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 170, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 150, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 14, in formfield_for_foreignkey
+    kwargs["queryset"] =ids.values(id)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 697, in values
+    clone = self._values(*fields, **expressions)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 692, in _values
+    clone.query.set_values(fields)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1907, in set_values
+    self.add_fields(field_names, True)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1656, in add_fields
+    name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+AttributeError: 'builtin_function_or_method' object has no attribute 'split'
+2017-08-24 22:10:23,771 [Thread-2:123145467011072] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+TypeError: catid() takes exactly 1 argument (2 given)
+2017-08-24 22:41:08,934 [Thread-2:123145487523840] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Unknown field(s) (catid) specified for article. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-24 22:41:10,886 [Thread-3:123145487523840] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 651, in get_form
+    % (e, self.__class__.__name__)
+FieldError: Unknown field(s) (catid) specified for article. Check fields/fieldsets/exclude attributes of class ContentAdmin.
+2017-08-24 23:10:26,088 [Thread-5:123145344483328] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1662, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 1105, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 863, in execute_sql
+    sql, params = self.as_sql()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 412, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 46, in pre_sql_setup
+    self.setup_query()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 37, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 213, in get_select
+    related_klass_infos = self.get_related_selections(select)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 717, in get_related_selections
+    ", ".join(_get_field_choices()) or '(none)',
+FieldError: Non-relational field given in select_related: 'title'. Choices are: category
+2017-08-24 23:27:54,414 [Thread-2:123145573777408] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1437, in _changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 615, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 304, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 604, in get_fields
+    form = self.get_form(request, obj, fields=None)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 647, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 546, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 252, in __new__
+    opts.field_classes)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/forms/models.py", line 177, in fields_for_model
+    formfield.queryset = formfield.queryset.complex_filter(limit_choices_to)
+AttributeError: 'function' object has no attribute 'complex_filter'
+2017-08-25 00:41:03,423 [Thread-2:123145346400256] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 911, in _resolve_lookup
+    current = current()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/helpers.py", line 209, in contents
+    f, attr, value = lookup_field(field, obj, model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+TypeError: task_added_at() takes exactly 1 argument (2 given)
+2017-08-25 00:43:18,769 [Thread-2:123145538822144] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 708, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 849, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 911, in _resolve_lookup
+    current = current()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/helpers.py", line 209, in contents
+    f, attr, value = lookup_field(field, obj, model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 18, in task_added_at
+    for i in obj:
+TypeError: 'article' object is not iterable
+2017-08-25 00:47:51,802 [Thread-4:123145569550336] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 340, in result_list
+    'results': list(results(cl))}
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 307, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/utils.py", line 295, in lookup_field
+    value = attr(obj)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 18, in task_added_at
+    return obj.name
+AttributeError: 'article' object has no attribute 'name'
+2017-08-25 01:08:47,256 [Thread-2:123145339396096] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 1105, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 874, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '60.205.182.23' (60)")
+2017-08-25 01:15:19,335 [Thread-2:123145573269504] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 213, in inner
+    if not self.has_permission(request):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 187, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/functional.py", line 385, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 1105, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 874, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '60.205.182.23' (60)")
+2017-08-26 12:43:10,476 [Thread-2:123145509158912] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/dmd/article/2/change/
+Traceback (most recent call last):
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/zzh/anaconda/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1465, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "/Users/zzh/myPython/smallData/view/daymdata/dmd/admin.py", line 20, in __init__
+    super(category, self).__init__(*args, **kwargs)
+TypeError: super(type, obj): obj must be an instance or subtype of type
